@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Planerium Agentic Operations Framework</title>
+  <style>
+    :root{
+      --bg:#f6f2ea;
+      --card:#fffaf2;
+      --ink:#2d241d;
+      --muted:#6f6258;
+      --line:#ddcfbe;
+      --accent:#c66b2d;
+      --soft:#f1e2d3;
+      --guard:#ead9c8;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--ink);line-height:1.45}
+    .wrap{max-width:1200px;margin:0 auto;padding:28px}
+    h1{font-size:34px;margin:0 0 10px}
+    h2{font-size:22px;margin:0 0 10px}
+    p.lead{font-size:18px;color:var(--muted);margin:0 0 24px}
+    .grid{display:grid;gap:16px}
+    .layer{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px;box-shadow:0 6px 20px rgba(0,0,0,.05)}
+    .layer.constitution{background:#fff4ea}
+    .layer.harness{background:#fff7ef}
+    .row-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .row-4{grid-template-columns:repeat(4,minmax(0,1fr))}
+    .card{background:white;border:1px solid var(--line);border-radius:16px;padding:14px}
+    .card.guard{background:var(--guard)}
+    .small{font-size:14px;color:var(--muted)}
+    .pill{display:inline-block;padding:6px 10px;border-radius:999px;background:var(--soft);font-size:12px;margin:0 6px 6px 0}
+    .flow{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+    .step{padding:10px 12px;border-radius:12px;background:white;border:1px solid var(--line)}
+    .arrow{align-self:center;font-weight:bold;color:var(--accent)}
+    @media (max-width: 900px){
+      .row-3,.row-4{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Planerium Agentic Operations Framework</h1>
+    <p class="lead">A harness-driven operating system for a real educational website, with constitutional protection for brand distinctiveness and pedagogical integrity.</p>
+
+    <div class="grid">
+      <section class="layer constitution">
+        <h2>Layer 1 — Constitutional</h2>
+        <div class="flow">
+          <div class="step">Brand Constitution</div>
+          <div class="step">Pedagogical Charter</div>
+          <div class="step">Physical Learning Thesis</div>
+          <div class="step">Non-Negotiables</div>
+          <div class="step">Disclosure Policy</div>
+        </div>
+      </section>
+
+      <section class="layer harness">
+        <h2>Layer 2 — Harness</h2>
+        <p class="small">Preflight → classify → route → execute → guardian validate → safety validate → decide → writeback → evaluate</p>
+      </section>
+
+      <section class="layer">
+        <h2>Layer 3 — Operator Agents</h2>
+        <div class="grid row-4">
+          <div class="card"><strong>Intake & Triage</strong><div class="small">Normalize signals into typed work</div></div>
+          <div class="card"><strong>Technical Health</strong><div class="small">Protect uptime, integrity, and speed</div></div>
+          <div class="card"><strong>SEO & Crawl</strong><div class="small">Protect index quality and hub structure</div></div>
+          <div class="card"><strong>Content Strategy</strong><div class="small">Decide what to create or refresh next</div></div>
+          <div class="card"><strong>Content Production</strong><div class="small">Draft useful, distinctive content</div></div>
+          <div class="card"><strong>Monetization</strong><div class="small">Improve revenue without harming trust</div></div>
+          <div class="card"><strong>Analytics & Evaluation</strong><div class="small">Score outcomes and promote learning</div></div>
+        </div>
+      </section>
+
+      <section class="layer">
+        <h2>Layer 3b — Guardian Agents</h2>
+        <div class="grid row-3">
+          <div class="card guard"><strong>Brand Steward</strong><div class="small">Blocks generic drift and protects identity</div></div>
+          <div class="card guard"><strong>Pedagogical Steward</strong><div class="small">Protects learning value and audience fit</div></div>
+          <div class="card guard"><strong>Governance & Security</strong><div class="small">Protects permissions, disclosures, and risky actions</div></div>
+        </div>
+      </section>
+
+      <section class="layer">
+        <h2>Layer 4 — Memory & Evaluation</h2>
+        <div>
+          <span class="pill">Approved Patterns</span>
+          <span class="pill">Approved Exemplars</span>
+          <span class="pill">Known Failures</span>
+          <span class="pill">Regression Cases</span>
+          <span class="pill">Drift Cases</span>
+          <span class="pill">Decision Logs</span>
+        </div>
+      </section>
+
+      <section class="layer">
+        <h2>Content flow with guardian gates</h2>
+        <div class="flow">
+          <div class="step">Signal</div><div class="arrow">→</div>
+          <div class="step">Intake</div><div class="arrow">→</div>
+          <div class="step">Content Strategy</div><div class="arrow">→</div>
+          <div class="step">Brand Check A</div><div class="arrow">→</div>
+          <div class="step">Pedagogy Check A</div><div class="arrow">→</div>
+          <div class="step">Production</div><div class="arrow">→</div>
+          <div class="step">Brand Check B</div><div class="arrow">→</div>
+          <div class="step">Pedagogy Check B</div><div class="arrow">→</div>
+          <div class="step">Safety / Governance</div><div class="arrow">→</div>
+          <div class="step">Publish</div><div class="arrow">→</div>
+          <div class="step">Evaluate</div>
+        </div>
+      </section>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+handoff_base:
+  required:
+    - handoff_id
+    - run_id
+    - from_agent
+    - to_agent
+    - task_class
+    - artifact_type
+    - summary
+    - reason
+    - timestamp
+
+approved_brief:
+  required:
+    - audience
+    - learning_goal
+    - content_type
+    - target_surface
+    - teacher_intent
+    - no_go_zones
+    - brand_notes
+    - pedagogy_notes
+
+brand_review:
+  required:
+    - review_stage
+    - outcome
+    - uniqueness_assessment
+    - fit_assessment
+    - filler_risk
+    - required_revisions
+
+pedagogy_review:
+  required:
+    - review_stage
+    - outcome
+    - learning_value
+    - audience_fit
+    - teacher_usefulness
+    - busywork_risk
+    - required_revisions
+
+rollback_recommendation:
+  required:
+    - change_description
+    - observed_regression
+    - evidence
+    - severity
+    - rollback_urgency
+    - safer_next_step
