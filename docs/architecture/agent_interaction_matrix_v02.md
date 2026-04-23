@@ -26,6 +26,7 @@ They exchange typed work artifacts.
 | Content Production | Technical Health | `technical_publish_check_request` | Check page and template risk |
 | Content Production | Monetization & Merchandising | `monetization_safety_check_request` | Check ad and affiliate implications |
 | Any operator | Governance | `approval_request` | Risky write, external action, or policy-sensitive change |
+| Any operator or guardian | Analytics & Evaluation | `verification_bundle` | Submit structured verification evidence |
 | Analytics & Evaluation | Memory | `approved_pattern_writeback` | Promote proven pattern |
 | Analytics & Evaluation | Memory | `regression_case_writeback` | Preserve failure pattern |
 | Analytics & Evaluation | Content Strategy | `revise_brief` | Send back weak outcome |
@@ -35,5 +36,6 @@ They exchange typed work artifacts.
 
 - Operators move work forward.
 - Guardians approve or block.
-- Evaluation scores and writes learning.
+- Evaluation critiques and controls learning.
 - Governance protects boundaries.
+- The harness supervises the sequence and completion criteria.

@@ -8,10 +8,10 @@ Define the four required guardian gates for content-related work.
 
 Owner: Brand Steward
 
-Question: Does the idea fit Planerium identity before production begins?
+Question: Does the idea fit site identity before production begins?
 
 Checks:
-- unmistakably Planerium or generic
+- unmistakably site-specific or generic
 - enrichment-first value
 - tone fit
 - originality fit
@@ -34,13 +34,13 @@ Checks:
 
 Owner: Brand Steward
 
-Question: Did the produced output preserve Planerium identity?
+Question: Did the produced output preserve site identity?
 
 Checks:
 - voice and clarity
 - distinctiveness
 - non-generic structure
-- alignment with printable ecosystem
+- alignment with the site ecosystem
 - trustworthiness
 
 ## Gate 4 — Draft Pedagogy Validation

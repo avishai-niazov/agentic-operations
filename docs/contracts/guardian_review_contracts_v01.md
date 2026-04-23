@@ -10,7 +10,7 @@ Fields:
 - stage
 - reviewed_artifact
 - outcome
-- Planerium_fit
+- site_fit
 - uniqueness
 - clarity
 - filler_risk

@@ -16,6 +16,15 @@
 - `severity`
 - `timestamp`
 
+## Required quality rules for all handoffs
+
+Every handoff must make these explicit:
+- what is known
+- what is assumed
+- what still needs validation
+- whether a retry is reasonable
+- whether escalation is already recommended
+
 ## Content-specific artifacts
 
 ### approved_brief
@@ -34,7 +43,7 @@ Must contain:
 Must contain:
 - pass / conditional / fail
 - uniqueness assessment
-- Planerium-fit assessment
+- site-fit assessment
 - filler-risk assessment
 - required revisions
 
@@ -46,6 +55,14 @@ Must contain:
 - teacher-usefulness assessment
 - busywork-risk assessment
 - required revisions
+
+### verification_bundle
+Must contain:
+- validation types run
+- acceptance checks passed or failed
+- unresolved risks
+- evidence references
+- final verification recommendation
 
 ### rollback_recommendation
 Must contain:
@@ -62,3 +79,4 @@ Must contain:
 - content approval without guardian artifact
 - risky write request without explicit severity
 - memory promotion without evaluation artifact
+- completion claim without required verification evidence

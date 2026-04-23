@@ -13,4 +13,4 @@ Ensure that AI-assisted outputs remain honest, reviewable, and traceable.
 
 ## Public stance
 
-Planerium uses AI as an operational and drafting layer, not as a substitute for educational judgment or brand identity.
+This framework uses AI as an operational and drafting layer, not as a substitute for educational judgment or site identity.

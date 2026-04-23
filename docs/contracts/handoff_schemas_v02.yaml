@@ -40,6 +40,16 @@ pedagogy_review:
     - busywork_risk
     - required_revisions
 
+verification_bundle:
+  required:
+    - verification_id
+    - run_id
+    - validation_types_run
+    - acceptance_checks
+    - unresolved_risks
+    - evidence_refs
+    - recommendation
+
 rollback_recommendation:
   required:
     - change_description

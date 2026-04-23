@@ -1,22 +1,20 @@
-# Planerium Agentic Operations Framework
+# Website Agentic Operations Framework
 
-A harness-driven, multi-agent operating system for Planerium's day-to-day technical health, search growth, content operations, and revenue optimization — with constitutional safeguards for **brand distinctiveness** and **pedagogical integrity**.
+A harness-driven, multi-agent operating system for a real website's day-to-day technical health, search growth, content operations, and revenue optimization — with constitutional safeguards for **brand distinctiveness** and **pedagogical integrity**.
 
 ## Why this exists
 
-Most agent projects are over-centered on generation. Planerium needs the opposite:
+Most agent projects are over-centered on generation. This framework takes the opposite approach:
 
-- a governed operating model rather than free-form autonomy
+- governed operations rather than free-form autonomy
 - narrow agents with explicit contracts
 - typed handoffs instead of ad hoc agent chatter
-- self-learning through traces and evaluation, not self-rewriting prompts
-- self-healing through retries, quarantines, rollback, and escalation
-- hard protection for what makes Planerium different:
-  - its writing and printable style
-  - its educational and pedagogical quality
-  - its long-term bet on meaningful, hands-on learning
+- verification before promotion or risky writes
+- supervisor and critic loops that keep runs on track
+- hard protection for what makes a website distinctive
+- a leaf-vs-core change policy so AI speed does not quietly damage architecture
 
-This framework is designed for a real production website and a one-person operator who wants leverage **without losing control**.
+This framework is designed for a real production website and an operator who wants leverage **without losing control**.
 
 ## Architecture at a glance
 
@@ -29,17 +27,18 @@ The highest authority in the system.
 - Non-Negotiables
 - Provenance and Disclosure Policy
 
-### 2) Harness layer
-The orchestration contract.
+### 2) Supervisor layer
+The harness is the runtime supervisor.
 
-- runtime stages
+It owns:
+- stage order
 - preflight checks
-- read/write permissions
-- validation gates
-- refusal points
-- invariant checks
-- trace requirements
-- rollback and escalation rules
+- routing
+- retry and halt rules
+- guardian and safety gates
+- critic checkpoint enforcement
+- decision states
+- trace completeness
 
 ### 3) Specialist agents
 
@@ -50,12 +49,14 @@ The orchestration contract.
 - Content Strategy
 - Content Production
 - Monetization & Merchandising
-- Analytics & Evaluation
 
 #### Guardians
 - Brand Steward
 - Pedagogical Steward
 - Governance, Security & Approval
+
+#### Critic / evaluation role
+- Analytics & Evaluation
 
 ### 4) Memory and evaluation
 The feedback system.
@@ -72,30 +73,35 @@ The feedback system.
 ## Design principles
 
 1. **Identity before scale**  
-   Planerium should not drift into generic AI content.
+   The website should not drift into generic AI output.
 
 2. **Pedagogy before output volume**  
-   Educational usefulness is a first-class constraint.
+   Educational usefulness is a first-class constraint where education is in scope.
 
 3. **Typed handoffs over free-form collaboration**  
    Agents communicate through contracts and queues.
 
-4. **Evidence-based learning**  
-   The system learns through trace review, scorecards, and approved memory writebacks.
+4. **Supervisor and critic loops are explicit**  
+   The harness supervises; guardians and evaluation critique.
 
-5. **Controlled healing**  
-   Retry, timeout, fallback, quarantine, resume, rollback, escalate.
+5. **Evidence-based learning**  
+   The system learns through traces, scorecards, and approved writebacks.
 
-6. **Human authority remains intact**  
-   The system is designed to extend a human operator, not replace judgment.
+6. **Leaf vs core safety**  
+   AI can move faster on isolated leaf work than on core architecture and policy files.
+
+7. **Human authority remains intact**  
+   The system extends a human operator; it does not replace judgment.
 
 ## Core folders
 
-- `docs/architecture/` — runtime model, interaction model, gate model
-- `docs/governance/` — invariants, approvals, refusal rules, secrets policy
-- `docs/contracts/` — tool contracts, handoff schemas, guardian review contracts
-- `docs/evaluation/` — scorecards, traces, learning promotion, drift rules
+- `docs/architecture/` — runtime model, interaction model, supervision model, gate model
+- `docs/governance/` — invariants, approvals, refusal rules, change safety, secrets policy
+- `docs/contracts/` — tool contracts, handoff schemas, guardian review contracts, verification contracts
+- `docs/evaluation/` — scorecards, traces, learning promotion, drift rules, regression rules
 - `knowledge/` — business, technical, SEO, content, corpora, memory
+- `tests/acceptance/` — acceptance checks for verifiable behavior
+- `tests/golden_cases/` — representative known-good cases and edge cases
 - `queues/` — task state transitions
 - `runs/` — traces, reports, incidents, rollback candidates
 - `.claude/skills/` — operational contracts per agent
@@ -105,10 +111,11 @@ The feedback system.
 1. Read `knowledge/content/brand_constitution_v01.md`
 2. Read `knowledge/content/pedagogical_charter_v01.md`
 3. Read `HARNESS.md`
-4. Read `docs/architecture/runtime_state_model_v02.md`
-5. Read `docs/architecture/agent_interaction_matrix_v02.md`
-6. Review each agent `SKILL.md`
-7. Implement only one or two agents end-to-end before expanding
+4. Read `docs/architecture/supervision_and_feedback_model_v01.md`
+5. Read `docs/governance/change_safety_policy_v01.md`
+6. Read `docs/contracts/verification_contracts_v01.md`
+7. Review each agent `SKILL.md`
+8. Implement one end-to-end path before expanding
 
 ## What this framework is not
 
@@ -116,8 +123,9 @@ The feedback system.
 - not a generic “content machine”
 - not a license for agents to rewrite their own rules
 - not a replacement for editorial, pedagogical, or security judgment
+- not an excuse to skip verification because AI was fast
 
 ## Version
 
-- Initial repo scaffold created: 2026-04-22
-- Architecture pack: v1
+- Initial scaffold: 2026-04-22
+- Genericized and supervision / verification update: 2026-04-23

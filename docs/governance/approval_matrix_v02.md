@@ -14,3 +14,5 @@
 | Email outreach or external communication | Yes | Brand and compliance risk |
 | Memory promotion | No | Only if evaluation policy is satisfied |
 | Charter or constitution change | Yes | Highest-risk governance artifact |
+| Core orchestration or contract change | Yes | Treat as core architecture |
+| Leaf-node helper, demo, or reporting artifact | Usually No | Still needs trace and sensible verification |

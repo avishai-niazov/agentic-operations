@@ -17,3 +17,5 @@
 10. Every blocked result must record why.
 11. Every promoted learning must have evidence.
 12. Every rollback candidate must have explicit impact reasoning.
+13. Core files must not be changed under leaf-level safety rules.
+14. Runs that require verification must not be closed without it.
